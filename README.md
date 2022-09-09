@@ -1,30 +1,25 @@
 # NeuBox
 
 NeuBox is BeepBox repackaged as a desktop application.
-Try it out [here](https://www.beepbox.co)!
 
-All song data is packaged into the URL at the top of your browser. When you make
-changes to the song, the URL is updated to reflect your changes. When you are
-satisfied with your song, just copy and paste the URL to save and share your
-song!
+NeuBox is currently in very early development. More awesomeness coming soon.
 
-BeepBox is a passion project, and will always be free to use. If you find it
-valuable and have the means, any gratuity via
-[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QZJTX9GRYEV9N&currency_code=USD)
-would be appreciated!
+Go throw money at John Nesky/Shaktool, the incredible creator of BeepBox: [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QZJTX9GRYEV9N&currency_code=USD)
 
 BeepBox is developed by [John Nesky](http://www.johnnesky.com/).
+NeuBox is developed by TheParadoxBox. I don't have a fancy website.
 
 ## Compiling
 
 The source code is available under the MIT license. The code is written in
-[TypeScript](https://www.typescriptlang.org/), which requires
-[node & npm](https://www.npmjs.com/get-npm), so install those first. Then to
-build this project, open the command line and run:
+[TypeScript](https://www.typescriptlang.org/) with the [Neutralino](https://neutralino.js.org)
+library, both requiring [node & npm](https://www.npmjs.com/get-npm),
+so install those first.
+Then to build this project, open the command line and run:
 
 ```
-git clone https://github.com/johnnesky/beepbox.git
-cd beepbox
+git clone https://github.com/TheParadoxBox/NeuBox.git
+cd NeuBox
 npm install
 npm run build
 ```
@@ -42,12 +37,18 @@ demo using it. To rebuild just the synth code, run:
 npm run build-synth
 ```
 
-The [editor/](editor) folder has additional code to display the online song
-editor interface. After compiling the editor code, open website/index.html to
-see the editor interface. To rebuild just the editor code, run:
+The [editor/](editor) folder has additional code to display the song editor
+interface. Building the online editor is deprecated, however, and may not work.
+If for some reason you still want to build the online editor, run:
 
 ```
 npm run build-editor
+```
+
+To build the desktop editor, run:
+
+```
+npm run build-client
 ```
 
 The [player/](player) folder has a miniature song player interface for embedding
@@ -63,7 +64,7 @@ The build process outputs JavaScript files into this folder.
 ## Dependencies
 
 Most of the dependencies are listed in [package.json](package.json), although
-I'd like to note that BeepBox also has an indirect, optional dependency on
+I'd like to note that NeuBox also has an indirect, optional dependency on
 [lamejs](https://www.npmjs.com/package/lamejs) via
 [jsdelivr](https://www.jsdelivr.com/) for exporting .mp3 files. If the user
 attempts to export an .mp3 file, BeepBox will direct the browser to download
