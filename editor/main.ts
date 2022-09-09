@@ -10,7 +10,7 @@ import {NotePin, Note, Pattern, Instrument, Channel, Song, Synth} from "../synth
 import {SongDocument} from "./SongDocument";
 import {ExportPrompt} from "./ExportPrompt";
 import {ChangePreset} from "./changes";
-import "./Neutralino";
+declare let Neutralino: any;
 
 // Allow window to close when you click the "close" button LMAO
 function onWindowClose() {
