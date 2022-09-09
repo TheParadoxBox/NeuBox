@@ -23,5 +23,5 @@ npx terser \
 	--mangle \
 	--mangle-props regex="/^_.+/;"
 
-# Compile into Neutralino site
-neu build --release
+# Compile Neutralino apps
+neu build

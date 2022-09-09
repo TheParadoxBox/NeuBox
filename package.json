@@ -7,7 +7,7 @@
 	"homepage.doNotIncludeThisYet": "https://www.beepbox.co",
 	"type": "module",
 	"scripts": {
-		"build": "npm run build-synth && npm run build-player && npm run build-client",
+		"build": "bash ./compile_neubox.sh",
 		"build-synth": "bash ./compile_beepbox_synth.sh",
 		"build-player": "bash ./compile_beepbox_player.sh",
 		"build-editor": "bash ./compile_beepbox_editor.sh.old",
