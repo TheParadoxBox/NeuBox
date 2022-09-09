@@ -1,27 +1,29 @@
 {
-	"name": "BeepBox",
-	"version": "4.1.0",
-	"description": "BeepBox is an online tool for sketching and sharing instrumental music.",
-	"author": "John Nesky",
+	"name": "NeuBox",
+	"version": "0.1.0",
+	"description": "BeepBox for the desktop, running on Neutralino.JS.",
+	"author": "TheParadoxBox",
 	"license": "MIT",
-	"homepage": "https://www.beepbox.co",
+	"homepage.doNotIncludeThisYet": "https://www.beepbox.co",
 	"type": "module",
 	"scripts": {
-		"build": "npm run build-synth && npm run build-player && npm run build-editor",
+		"build": "npm run build-synth && npm run build-player && npm run build-client",
 		"build-synth": "bash ./compile_beepbox_synth.sh",
 		"build-player": "bash ./compile_beepbox_player.sh",
-		"build-editor": "bash ./compile_beepbox_editor.sh"
+		"build-editor": "bash ./compile_beepbox_editor.sh.old",
+		"build-client": "bash ./compile_beepbox_client.sh"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://johnnesky@github.com/johnnesky/beepbox.git"
+		"url": "git+https://TheParadoxBox@github.com/TheParadoxBox/NeuBox.git"
 	},
 	"devDependencies": {
 		"@rollup/plugin-node-resolve": "^9.0.0",
 		"rollup": "^2.32.1",
 		"rollup-plugin-sourcemaps": "^0.6.3",
 		"terser": "^5.3.8",
-		"typescript": "^4.0.3"
+		"typescript": "^4.0.3",
+		"neu": "^0.0.0"
 	},
 	"dependencies": {
 		"imperative-html": "^0.1.0"

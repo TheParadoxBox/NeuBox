@@ -1,0 +1,66 @@
+{
+	"applicationId": "TheParadoxBox.NeuBox",
+	"version": "1.0.0",
+	"defaultMode": "window",
+	"port": 0,
+	"documentRoot": "/website/",
+	"url": "/",
+	"enableServer": true,
+	"enableNativeAPI": true,
+	"tokenSecurity": "one-time",
+	"logging": {
+		"enabled": true,
+		"writeToLogFile": true
+	},
+	"nativeAllowList": [
+		"app.*",
+		"os.*",
+		"debug.log"
+	],
+	"modes": {
+		"window": {
+		"title": "NeuBox",
+		"width": 800,
+		"height": 665,
+		"minWidth": 500,
+		"minHeight": 300,
+		"fullScreen": false,
+		"alwaysOnTop": false,
+		"icon": "/website/icon_32.png",
+		"enableInspector": false,
+		"borderless": false,
+		"maximize": false,
+		"hidden": false,
+		"resizable": true,
+		"exitProcessOnClose": true
+		},
+		"browser": {
+		"nativeBlockList": [
+			"filesystem.*"
+		]
+		},
+		"cloud": {
+		"url": "/website/#cloud",
+		"nativeAllowList": [
+			"app.*"
+		]
+		},
+		"chrome": {
+		"width": 713,
+		"height": 624,
+		"args": "--user-agent=\"Neutralinojs chrome mode\"",
+		"nativeBlockList": [
+			"filesystem.*",
+			"os.*"
+		]
+		}
+	},
+	"cli": {
+		"binaryName": "NeuBox",
+		"resourcesPath": "/website/",
+		"extensionsPath": "/extensions/",
+		"clientLibrary": "/editor/neutralino.js",
+		"binaryVersion": "4.7.0",
+		"clientVersion": "3.6.0"
+		}
+	}

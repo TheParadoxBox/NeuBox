@@ -1,6 +1,6 @@
-# BeepBox
+# NeuBox
 
-BeepBox is an online tool for sketching and sharing instrumental melodies.
+NeuBox is BeepBox repackaged as a desktop application.
 Try it out [here](https://www.beepbox.co)!
 
 All song data is packaged into the URL at the top of your browser. When you make

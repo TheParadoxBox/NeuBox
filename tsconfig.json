@@ -1,4 +1,7 @@
 {
 	"extends": "./tsconfig_synth_only.json",
 	"files": [ "editor/main.ts" ],
+	"compilerOptions": {
+		"allowJs": true
+	}
 }

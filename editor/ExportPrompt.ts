@@ -1,4 +1,5 @@
 // Copyright (c) 2012-2022 John Nesky and contributing authors, distributed under the MIT license, see accompanying the LICENSE.md file.
+// Copyright (c) 2022 TheParadoxBox, distributed under the MIT license, see accompanying the LICENSE.md file.
 
 import {InstrumentType, /*EnvelopeType,*/ Config, getArpeggioPitchIndex} from "../synth/SynthConfig";
 import {Instrument, Pattern, Note, Song, Synth} from "../synth/synth";

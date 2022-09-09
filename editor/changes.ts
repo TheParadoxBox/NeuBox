@@ -1,4 +1,5 @@
 // Copyright (c) 2012-2022 John Nesky and contributing authors, distributed under the MIT license, see accompanying the LICENSE.md file.
+// Copyright (c) 2022 TheParadoxBox, distributed under the MIT license, see accompanying the LICENSE.md file.
 
 import {Algorithm, Dictionary, FilterType, InstrumentType, EffectType, AutomationTarget, Config, effectsIncludePanning, effectsIncludeDistortion} from "../synth/SynthConfig";
 import {NotePin, Note, makeNotePin, Pattern, FilterSettings, FilterControlPoint, SpectrumWave, HarmonicsWave, Instrument, Channel, Song, Synth} from "../synth/synth";

@@ -1,4 +1,5 @@
 // Copyright (c) 2012-2022 John Nesky and contributing authors, distributed under the MIT license, see accompanying the LICENSE.md file.
+// Copyright (c) 2022 TheParadoxBox, distributed under the MIT license, see accompanying the LICENSE.md file.
 
 import {Dictionary, DictionaryArray, EnvelopeType, InstrumentType, Transition, Chord, Envelope, Config} from "../synth/SynthConfig";
 import {isMobile, EditorConfig} from "./EditorConfig";
@@ -9,6 +10,14 @@ import {NotePin, Note, Pattern, Instrument, Channel, Song, Synth} from "../synth
 import {SongDocument} from "./SongDocument";
 import {ExportPrompt} from "./ExportPrompt";
 import {ChangePreset} from "./changes";
+import "./Neutralino";
+
+// Allow window to close when you click the "close" button LMAO
+function onWindowClose() {
+    Neutralino.app.exit();
+}
+Neutralino.init();
+Neutralino.events.on("windowClose", onWindowClose);
 
 const doc: SongDocument = new SongDocument();
 const editor: SongEditor = new SongEditor(doc);

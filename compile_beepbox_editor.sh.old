@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo "WARNING: This file will build NeuBox as an HTML file. Use compile_beepbox_client.sh instead."
+
 # Compile editor/main.ts into build/editor/main.js and dependencies
 npx tsc
 
