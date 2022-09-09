@@ -20,6 +20,7 @@ Then to build this project, open the command line and run:
 ```
 git clone https://github.com/TheParadoxBox/NeuBox.git
 cd NeuBox
+neu update
 npm install
 npm run build
 ```
