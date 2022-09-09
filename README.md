@@ -2,11 +2,9 @@
 
 NeuBox is BeepBox repackaged as a desktop application.
 
-NeuBox is currently in very early development. More awesomeness coming soon.
+NeuBox is currently in very early development. More awesomeness coming soon. View the [roadmap](ROADMAP.md) to learn more.
 
-Go throw money at John Nesky/Shaktool, the incredible creator of BeepBox: [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QZJTX9GRYEV9N&currency_code=USD)
-
-BeepBox is developed by [John Nesky](http://www.johnnesky.com/).
+BeepBox is developed by [John Nesky/shaktool](http://www.johnnesky.com/). If you like this project, go throw money at him on his [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QZJTX9GRYEV9N&currency_code=USD).
 NeuBox is developed by TheParadoxBox. I don't have a fancy website.
 
 ## Compiling
